@@ -1,0 +1,179 @@
+
+
+
+
+.login-panel {
+  padding-top: 200px;
+}
+
+.fixed {
+  position: fixed;
+  top: 100px;
+  right:20px;
+  text-align: center;
+  z-index:9999999;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3) !important;
+}
+
+
+@keyframes fadeIn {
+  0% {
+  opacity: 0; /*初始状态 透明度为0*/
+  right: -100px;
+  }
+  100% {
+  opacity: 1; /*结尾状态 透明度为1*/
+  right: 20px;
+  }
+}
+
+.notice {
+  animation-name: fadeIn; /*动画名称*/
+  animation-duration: 0.5s; /*动画持续时间*/
+  animation-iteration-count: 1; /*动画次数*/
+  animation-delay: 0s; /*延迟时间*/
+}
+
+/*模态框修改*/
+#addPlatform .modal-dialog{
+}
+
+#modifyInfo .modal-dialog{
+}
+
+#changeIcon .modal-dialog   {
+  margin: 12% auto;
+  width: 900px;
+}
+
+#verifyAnchor .modal-dialog{
+  width: 50%;
+}
+
+
+
+/*刷新背景颜色修复*/
+
+.skin-blue .wrapper,body
+{
+  background-color: #ecf0f5;
+}
+
+
+/*Custom Calendar*/
+.custom-calendar{
+  width:96px;
+  height: 50px;
+}
+
+.custom-calendar-drop{
+  width: 120px;
+}
+
+
+/*sitelogo*/
+
+
+.avatar-body {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.avatar-upload {
+  overflow: hidden;
+}
+
+.avatar-upload label {
+  display: block;
+  float: left;
+  clear: left;
+  width: 100px;
+}
+
+.avatar-upload input {
+  display: block;
+  margin-left: 110px;
+}
+
+.avater-alert {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.avatar-wrapper {
+  height: 364px;
+  width: 100%;
+  margin-top: 15px;
+  box-shadow: inset 0 0 5px rgba(0,0,0,.25);
+  background-color: #fcfcfc;
+  overflow: hidden;
+}
+
+.avatar-wrapper img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.avatar-preview {
+  float: left;
+  margin-top: 15px;
+  margin-right: 15px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.avatar-preview:hover {
+  border-color: #ccf;
+  box-shadow: 0 0 5px rgba(0,0,0,.15);
+}
+
+.avatar-preview img {
+  width: 100%;
+}
+
+.preview-lg {
+  height: 184px;
+  width: 184px;
+  margin-top: 15px;
+}
+
+.preview-md {
+  height: 100px;
+  width: 100px;
+}
+
+.preview-sm {
+  height: 50px;
+  width: 50px;
+}
+
+@media (min-width: 992px) {
+  .avatar-preview {
+    float: none;
+  }
+}
+
+.avatar-btns {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.avatar-btns .btn-group {
+  margin-right: 5px;
+}
+
+.loading {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: .75;
+  filter: alpha(opacity=75);
+  z-index: 20140628;
+}
+

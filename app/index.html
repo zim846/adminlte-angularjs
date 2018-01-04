@@ -1,0 +1,135 @@
+<!doctype html>
+<html ng-app="BackWebApp" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta charset="utf-8">
+    <title>HELLOCARMS</title>
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="../bower_components/AdminLTE/dist/css/skins/_all-skins.css">
+    <link rel="stylesheet" href="../bower_components/cropper/dist/cropper.css">
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/bootstrap-slider/slider.css" />
+    <link rel="stylesheet" href="../bower_components/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.css" />
+    <link rel="stylesheet" href="../bower_components/datatables.net-bs/css/dataTables.bootstrap.css" />
+    <link rel="stylesheet" href="../bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css" />
+    <link rel="stylesheet" href="../bower_components/bootstrap-daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="../bower_components/fullcalendar/dist/fullcalendar.css" />
+    <link rel="stylesheet" href="../bower_components/ion.rangeSlider/css/ion.rangeSlider.css" />
+    <link rel="stylesheet" href="../bower_components/ion.rangeSlider/css/ion.rangeSlider.skinFlat.css" />
+    <link rel="stylesheet" href="../bower_components/morris.js/morris.css" />
+    <link rel="stylesheet" href="../bower_components/Ionicons/css/ionicons.css" />
+    <link rel="stylesheet" href="../bower_components/AdminLTE/dist/css/AdminLTE.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- <link rel="stylesheet" href="sytles/login.css"> -->
+    <!-- endbuild -->
+  </head>
+  <body class="skin-blue  sidebar-mini login-page">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+
+      <div  ng-controller="MainCtrl">
+        <div ui-view></div>
+      </div>
+
+
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-animate/angular-animate.js"></script>
+    <script src="../bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="../bower_components/angular-messages/angular-messages.js"></script>
+    <script src="../bower_components/angular-resource/angular-resource.js"></script>
+    <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="../bower_components/angular-smart-table/dist/smart-table.js"></script>
+    <script src="../bower_components/ng-file-upload/ng-file-upload.js"></script>
+    <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="../bower_components/bootstrap-slider/bootstrap-slider.js"></script>
+    <script src="../bower_components/chart.js/Chart.js"></script>
+    <script src="../bower_components/ckeditor/ckeditor.js"></script>
+    <script src="../bower_components/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../bower_components/datatables.net/js/jquery.dataTables.js"></script>
+    <script src="../bower_components/datatables.net-bs/js/dataTables.bootstrap.js"></script>
+    <script src="../bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+    <script src="../bower_components/moment/moment.js"></script>
+    <script src="../bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script src="../bower_components/fastclick/lib/fastclick.js"></script>
+    <script src="../bower_components/Flot/jquery.flot.js"></script>
+    <script src="../bower_components/fullcalendar/dist/fullcalendar.js"></script>
+    <script src="../bower_components/inputmask/dist/inputmask/inputmask.js"></script>
+    <script src="../bower_components/inputmask/dist/inputmask/inputmask.extensions.js"></script>
+    <script src="../bower_components/inputmask/dist/inputmask/inputmask.date.extensions.js"></script>
+    <script src="../bower_components/inputmask/dist/inputmask/inputmask.numeric.extensions.js"></script>
+    <script src="../bower_components/inputmask/dist/inputmask/inputmask.phone.extensions.js"></script>
+    <script src="../bower_components/inputmask/dist/inputmask/jquery.inputmask.js"></script>
+    <script src="../bower_components/inputmask/dist/inputmask/global/document.js"></script>
+    <script src="../bower_components/inputmask/dist/inputmask/global/window.js"></script>
+    <script src="../bower_components/inputmask/dist/inputmask/phone-codes/phone.js"></script>
+    <script src="../bower_components/inputmask/dist/inputmask/phone-codes/phone-be.js"></script>
+    <script src="../bower_components/inputmask/dist/inputmask/phone-codes/phone-nl.js"></script>
+    <script src="../bower_components/inputmask/dist/inputmask/phone-codes/phone-ru.js"></script>
+    <script src="../bower_components/inputmask/dist/inputmask/phone-codes/phone-uk.js"></script>
+    <script src="../bower_components/inputmask/dist/inputmask/dependencyLibs/inputmask.dependencyLib.jqlite.js"></script>
+    <script src="../bower_components/inputmask/dist/inputmask/dependencyLibs/inputmask.dependencyLib.jquery.js"></script>
+    <script src="../bower_components/inputmask/dist/inputmask/dependencyLibs/inputmask.dependencyLib.js"></script>
+    <script src="../bower_components/inputmask/dist/inputmask/bindings/inputmask.binding.js"></script>
+    <script src="../bower_components/ion.rangeSlider/js/ion.rangeSlider.js"></script>
+    <script src="../bower_components/jquery-knob/js/jquery.knob.js"></script>
+    <script src="../bower_components/eve-raphael/eve.js"></script>
+    <script src="../bower_components/raphael/raphael.min.js"></script>
+    <script src="../bower_components/mocha/mocha.js"></script>
+    <script src="../bower_components/morris.js/morris.js"></script>
+    <script src="../bower_components/PACE/pace.js"></script>
+    <script src="../bower_components/select2/dist/js/select2.js"></script>
+    <script src="../bower_components/jquery-slimscroll/jquery.slimscroll.js"></script>
+    <script src="../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="../bower_components/bootstrap-timepicker/js/bootstrap-timepicker.js"></script>
+    <script src="../bower_components/jquery-sparkline/dist/jquery.sparkline.js"></script>
+    <script src="../bower_components/jquery-ui/jquery-ui.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <!-- 全局服务 -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/services/token-service.js"></script>
+        <script src="scripts/services/interceptor.js"></script>
+        <script src="scripts/services/notice-service.js"></script>
+        <script src="scripts/services/error-service.js"></script>
+
+        <!-- <script src="scripts/services/reason-service.js"></script>
+        <script src="scripts/services/richtext-config.js"></script> -->
+        <script src="../bower_components/angular-i18n/angular-locale_zh.js"></script>
+        <script src="../bower_components/cryptojslib/rollups/sha256.js"></script>
+        <script src="../bower_components/cropper/dist/cropper.js"></script>
+
+        <script src="scripts/controllers/login.js"></script>
+        <script src="scripts/controllers/sidebar.js"></script>
+        <script src="scripts/controllers/test.js"></script>
+        <!-- 模块服务 -->
+        <script src="scripts/services/sidebar-service.js"></script>
+        <script src="scripts/services/test-service.js"></script>
+        <!-- 组件 -->
+        <script src="scripts/components/tic-toc.js"></script>
+        <script src="scripts/components/compare.js"></script>
+
+           <!--filters -->
+        <script src="scripts/filters/decode.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
